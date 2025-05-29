@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apuntar Gols</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Apuntar Gols del Partit</h1>
+      <form id="scoreForm" class="score-form">
+        <div class="form-group">
+          <label for="aleixGoals">Quants gols ha marcat l'Aleix?</label>
+          <input
+            type="number"
+            id="aleixGoals"
+            name="aleixGoals"
+            min="0"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="titaGoals">Quants gols ha marcat la Tita?</label>
+          <input
+            type="number"
+            id="titaGoals"
+            name="titaGoals"
+            min="0"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="weekday">Quin dia de la setmana?</label>
+          <select id="weekday" name="weekday" required>
+            <option value="">Selecciona un dia</option>
+            <option value="dimarts">Dimarts</option>
+            <option value="dijous">Dijous</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="location">On s'ha jugat el partit?</label>
+          <select id="location" name="location" required>
+            <option value="">Selecciona una ubicació</option>
+            <option value="pasadis">En el passadís</option>
+            <option value="sempre">On sempre</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Data del partit:</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+
+        <button type="submit" class="btn">Guardar</button>
+      </form>
+      <a href="../index.html" class="btn btn-back">Tornar a l'Inici</a>
+    </div>
+    <script src="../script.js"></script>
+  </body>
+</html>
